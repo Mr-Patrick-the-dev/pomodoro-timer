@@ -146,7 +146,7 @@ function Pomodoro() {
                   <span className="oi oi-plus" />
                 </button>
 
-                <audio className="audio-element">
+                <audio className="audio-element" preload="auto">
                 <source src={sound}></source>
                 </audio>
 

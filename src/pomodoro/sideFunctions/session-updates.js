@@ -9,8 +9,6 @@ function sessionRunning({ focusTimer, breakTimer,  elapsed, sessionStatus }, aud
     breakTimer: breakTimer
   };
 
-  let beeper = audio.play()
-
   //Check that the session status is set to Focus
   if (sessionStatuses.sessionStatus === "Focusing") {
     
@@ -27,6 +25,8 @@ function sessionRunning({ focusTimer, breakTimer,  elapsed, sessionStatus }, aud
       sessionStatuses.sessionStatus = "On Break";
 
       sessionStatuses.elapsed = 0;
+
+      audio.play()
 
       return sessionStatuses
     }
@@ -45,6 +45,8 @@ function sessionRunning({ focusTimer, breakTimer,  elapsed, sessionStatus }, aud
       sessionStatuses.sessionStatus = "Focusing";
 
       sessionStatuses.elapsed = 0;
+
+      audio.play()
 
       return sessionStatuses
     };
