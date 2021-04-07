@@ -17,7 +17,7 @@ The project itself uses a template for Bootstrap, while the JavaScript and JSX w
 
 This project was made to be used by those who are looking for a balance between their study and break times while in a study session.
 
-##Features:
+## Features:
 
 1. Fully customize your break and study session times in increments of 5 minutes (study) and 1 minute (break).
 2. The timer is a live countdown of your set session times, with a progress bar included
